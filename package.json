@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon src/index.js",
-    "handle": "nodemon src/handle/handle.js"
+    "handle": "node handle/handle.js"
   },
   "author": "",
   "license": "ISC",
