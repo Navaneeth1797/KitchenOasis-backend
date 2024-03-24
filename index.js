@@ -1,5 +1,6 @@
 
 import express from "express";
+import cors from "cors";
 let app = express();
 
 import dotenv from "dotenv";
@@ -33,6 +34,11 @@ app.use(express.json({limit: '10mb', verify:(req, res, buf)=>{
     req.rawBody = buf.toString()
 }}));
 app.use(cookieParser());
+
+
+// Allow requests from specified origin
+app.use(cors({ origin: "https://kitchenoasis-1.onrender.com/" }));
+
 
 //import all routes 
 import productRoutes from "./routes/product.js";
