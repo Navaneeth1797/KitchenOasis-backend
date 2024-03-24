@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon src/index.js",
+    "prod": "nodemon src/index.js",
     "handle": "node handle/handle.js"
   },
   "author": "",
