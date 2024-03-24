@@ -5,7 +5,8 @@ import Products from "../models/products.js";
 const handleProducts = async () => {
   try {
     await mongoose.connect(
-      process.env.DB_URI || "mongodb://127.0.0.1:27017/kitchen-oasis-backend",
+      process.env.DB_URI ||
+        "mongodb+srv://rnavaneethk1797:navaneeth@cluster0.c5x1ep2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,
