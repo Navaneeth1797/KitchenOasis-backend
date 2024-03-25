@@ -9,8 +9,9 @@ import dotenv from "dotenv";
 dotenv.config();
 
 let app = express();
-
-
+let PORT = process.env.PORT || 8001
+//connecting to database
+connectDatabase()
 
 // handle uncaught exceptions
 
@@ -22,8 +23,7 @@ process.on("uncaughtException", (err) => {
     })
 })
 
-//connecting to database
-connectDatabase()
+
 
 
 // Middleware to parse incoming JSON requests
@@ -46,9 +46,9 @@ app.use("/api", paymentRoutes);
 
 app.use(errorMiddleware);
 
-let server = app.listen(process.env.PORT, () => {
+let server = app.listen(PORT, () => {
   console.log(
-    `server started on port:${process.env.PORT} in ${process.env.NODE_ENV} mode.`
+    `server started on port:${PORT} in ${process.env.NODE_ENV} mode.`
   );
 });
 
