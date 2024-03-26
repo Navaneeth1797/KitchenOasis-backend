@@ -6,6 +6,7 @@ import {
   getUserProfile,
   loginUser,
   logout,
+  registerAdminUser,
   registerUser,
   resetPassword,
   updatePassword,
@@ -18,6 +19,7 @@ import { authorizeRoles, isAuthenticated } from "../middlewares/auth.js";
 let router = express.Router();
 
 router.route("/register").post(registerUser);
+router.route("/register/admin").post(registerAdminUser);
 router.route("/login").post(loginUser);
 router.route("/logout").get(logout);
 router.route("/password/forgot").post(forgotPassword);

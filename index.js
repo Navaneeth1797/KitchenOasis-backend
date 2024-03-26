@@ -9,7 +9,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 let app = express();
-let PORT = process.env.PORT || 8000
+let PORT = process.env.PORT || 8001
 //connecting to database
 connectDatabase()
 
