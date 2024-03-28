@@ -6,6 +6,20 @@ Welcome to the Kitchen Oasis Backend API documentation. This API powers the back
 
 
 
+# Technologies Used
+- Node.js: Backend JavaScript runtime environment.
+- Express.js: Web application framework for Node.js.
+- MongoDB: NoSQL database for storing user, product, and order data.
+- Mongoose: MongoDB object modeling tool.
+- JWT: JSON Web Tokens for user authentication and authorization.
+- Stripe API: Payment processing API for handling transactions.
+- Cloudinary: Cloud-based image and video management service for uploading and storing product images.
+- Bcrypt: Password hashing library for securing user passwords.
+- Dotenv: Environment variable management for configuring application settings.
+
+  
+
+
 # User Roles and Functionalities
 
 
